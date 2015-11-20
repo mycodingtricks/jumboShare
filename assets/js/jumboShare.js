@@ -33,7 +33,7 @@
             settings.total = settings.total+n;
         }
         function updateCounter(){
-          $("#jumboShare_counter_"+settings.id).text(convertNumber(settings.total)).fadeIn();
+          $("#jumboShare_counter_"+settings.id).html(convertNumber(settings.total)+"<div>SHARES</div>").fadeIn();
         }
         function getCount(){
             var $this = this;
