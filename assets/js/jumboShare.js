@@ -5,6 +5,7 @@
             // These are the defaults.
             url:window.location.href,
             text:document.title,
+            twitterUsername:"mycodingtricks",
             id: rand,
             total: 0
         }, options );
@@ -21,7 +22,8 @@
                   "0"+
                "</div>"+
                "<div class='mct_jumboShare_buttons' id='jumboShare_buttons_"+settings.id+"'>"+
-                "<a target=_blank rel=nofollow href='https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(settings.url)+"&t="+encodeURI(settings.text)+"' class='jumboShare_btn facebook'>facebook</a>"+
+                "<a target=_blank rel=nofollow href='https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(settings.url)+"&t="+encodeURI(settings.text)+"' class='jumboShare_btn facebook'><sapn class='jumboShare_btn_text'>facebook</span></a>"+
+                "<a target=_blank rel=nofollow href='https://twitter.com/intent/tweet?via="+settings.twitterUsername+"&url="+encodeURIComponent(settings.url)+"&text="+encodeURI(settings.text)+"' class='jumboShare_btn twitter'><sapn class='jumboShare_btn_text'>Twitter</span></a>"+
             "</div>"+
           "</div>";
           return code;
