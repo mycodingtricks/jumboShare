@@ -19,6 +19,8 @@
                "<div class='mct_jumboShare_counter' id='jumboShare_counter_"+settings.id+"'>"+
                   "0"+
                "</div>"+
+               "<div class='mct_jumboShare_buttons' id='jumboShare_buttons_"+settings.id+"'>"+
+                "<a target=_blank rel=nofollow href='https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(settings.url)+"&t="+encodeURI(settings.title)+"' class='jumboShare_btn facebook'>facebook</a>"+
             "</div>"+
           "</div>";
           return code;
