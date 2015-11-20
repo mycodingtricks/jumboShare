@@ -14,9 +14,9 @@
           getCount();
         });
         function init(){
-         var code = "<div class='mct_jumboShare' id='jumboShare_"+settings.rand+"'>"+
+         var code = "<div class='mct_jumboShare' id='jumboShare_"+settings.id+"'>"+
             "<div class='mct_jumboShare_container'>"+
-               "<div class='mct_jumboShare_counter' id='jumboShare_counter_"+settings.rand+"'>"+
+               "<div class='mct_jumboShare_counter' id='jumboShare_counter_"+settings.id+"'>"+
                   "0"+
                "</div>"+
             "</div>"+
@@ -33,7 +33,7 @@
             settings.total = settings.total+n;
         }
         function updateCounter(){
-          $("#jumboShare_counter_"+settings.rand).text(convertNumber(settings.total)).fadeIn();
+          $("#jumboShare_counter_"+settings.id).text(convertNumber(settings.total)).fadeIn();
         }
         function getCount(){
             var $this = this;
