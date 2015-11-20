@@ -25,6 +25,7 @@
                 "<a target=_blank rel=nofollow href='https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(settings.url)+"&t="+encodeURI(settings.text)+"' class='jumboShare_btn facebook'><sapn class='jumboShare_btn_text'>facebook</span></a>"+
                 "<a target=_blank rel=nofollow href='https://twitter.com/intent/tweet?via="+settings.twitterUsername+"&url="+encodeURIComponent(settings.url)+"&text="+encodeURI(settings.text)+"' class='jumboShare_btn twitter'><sapn class='jumboShare_btn_text'>Twitter</span></a>"+
                 "<a target=_blank rel=nofollow href='https://plus.google.com/share?url="+encodeURIComponent(settings.url)+"' class='jumboShare_btn google'><sapn class='jumboShare_btn_text'>Google+</span></a>"+
+                "<a target=_blank rel=nofollow href='https://www.linkedin.com/cws/share?token&isFramed=false&url="+encodeURIComponent(settings.url)+"' class='jumboShare_btn linkedin'><sapn class='jumboShare_btn_text'>LinkedIn</span></a>"+
             "</div>"+
           "</div>";
           return code;
