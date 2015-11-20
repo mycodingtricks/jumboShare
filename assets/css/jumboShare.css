@@ -1,0 +1,28 @@
+.mct_jumboShare {
+    width: 100%;
+    margin: 10px auto;
+}
+.mct_jumboShare * {
+    box-sizing: border-box;
+}
+.mct_jumboShare_container {
+    display: flex;
+}
+.mct_jumboShare_counter {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: Helvetica neue,arial;
+    font-weight: 700;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    color: #F44336;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.mct_jumboShare_counter div {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    bottom: 2px;
+    font-weight: 100;
+}
