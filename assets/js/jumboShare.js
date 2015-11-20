@@ -9,7 +9,8 @@
         }, options );
         // Greenify the collection based on the settings variable.
         this.each(function(){
-          init();
+          var elem = $(this);
+          elem.html(init());
         });
         function init(){
          var code = "<div class='mct_jumboShare' id='jumboShare_"+settings.rand+"'>"+
@@ -19,8 +20,7 @@
                "</div>"+
             "</div>"+
           "</div>";
-          this.html(code);
-          getCount();
+          return code;
         }
         function convertNumber(n){
             if(n>=1000000000) return (n/1000000000).toFixed(1)+'G';
