@@ -4,6 +4,7 @@
         var settings = $.extend({
             // These are the defaults.
             url:window.location.href,
+            text:document.title,
             id: rand,
             total: 0
         }, options );
