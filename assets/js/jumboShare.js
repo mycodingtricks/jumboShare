@@ -1,4 +1,4 @@
-(function ( $ ) {
+(function($){
     $.fn.jumboShare = function( options ) {
         var rand = Math.floor((Math.random() * 1000) + 1);
         var settings = $.extend({
@@ -19,7 +19,7 @@
                "</div>"+
             "</div>"+
           "</div>";
-          $(this).html(code);
+          this.html(code);
           getCount();
         }
         function convertNumber(n){
@@ -75,4 +75,4 @@
         return this;
     };
  
-}( jQuery ));
+}(jQuery));
