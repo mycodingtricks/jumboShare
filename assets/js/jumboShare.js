@@ -20,6 +20,7 @@
             "</div>"+
           "</div>";
           $(this).html(code);
+          getCount();
         }
         function convertNumber(n){
             if(n>=1000000000) return (n/1000000000).toFixed(1)+'G';
@@ -28,7 +29,7 @@
             return n;
         }
         this.updateCounter = function(){
-          $("jumboShare_counter_"+settings.rand).text(settings.total).fadeIn();
+          $("jumboShare_counter_"+settings.rand).text(convertNumber(settings.total)).fadeIn();
         }
         function getCount(){
             var $this = this;
