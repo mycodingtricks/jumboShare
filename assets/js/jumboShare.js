@@ -11,6 +11,7 @@
         this.each(function(){
           var elem = $(this);
           elem.html(init());
+          getCount();
         });
         function init(){
          var code = "<div class='mct_jumboShare' id='jumboShare_"+settings.rand+"'>"+
