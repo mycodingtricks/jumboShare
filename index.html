@@ -54,7 +54,8 @@ height: 100%;width: 100%;}
 .mct_jumboShare_buttons a:hover{margin-top:10px;}
 .jumboShare_btn {
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px 5px 32px;
+    position: relative;
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
     border: 1px solid rgba(0, 0, 0, 0.07);
     font-family: Helvetica;
@@ -67,8 +68,19 @@ height: 100%;width: 100%;}
     -o-transition:All 0.3614s ease-in-out;
 }
 .jumboShare_btn:hover{color:#fff;}
+.jumboShare_btn:before{
+    content:"";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 32px;
+    height: 32px;
+}
 .jumboShare_btn.facebook {
     background: #3F51B5;
+}
+.jumboShare_btn.facebook:before{
+    background: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.or…2.03h5v-12.03h5v-4.97h-5v-2.55c0-.86.532-1.5%201-1.5z%22%2F%3E%3C%2Fsvg%3E) repeat;
 }
 
 .jumboShare_btn.twitter {
