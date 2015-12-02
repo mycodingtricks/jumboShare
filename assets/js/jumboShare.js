@@ -35,7 +35,7 @@
                 "<a target=_blank rel=nofollow href='https://plus.google.com/share?url="+encodeURIComponent(settings.url)+"' class='jumboShare_btn google'><sapn class='jumboShare_btn_text'>Google+</span></a>"+
                 "<a target=_blank rel=nofollow href='https://www.linkedin.com/cws/share?token&isFramed=false&url="+encodeURIComponent(settings.url)+"' class='jumboShare_btn linkedin'><sapn class='jumboShare_btn_text'>LinkedIn</span></a>"+
             "</div>"+
-            unescape("%3C%61%20%68%72%65%66%3D%27%68%74%74%70%3A%2F%2F%6D%79%63%6F%64%69%6E%67%74%72%69%63%6B%73%2E%63%6F%6D%27%20%63%6C%61%73%73%3D%27%6A%75%6D%62%6F%53%68%61%72%65%5F%6D%63%74%27%20%74%61%72%67%65%74%3D%27%5F%62%6C%61%6E%6B%27%20%74%69%74%6C%65%3D%27%47%65%74%20%54%68%69%73%20%4A%75%6D%62%6F%53%68%61%72%65%20%66%6F%72%20%79%6F%75%72%20%57%65%62%73%69%74%65%27%3E%4D%3C%2F%61%3E")+
+            unescape("%3C%61%20%68%72%65%66%3D%22%68%74%74%70%3A%2F%2F%6D%79%63%6F%64%69%6E%67%74%72%69%63%6B%73%2E%63%6F%6D%2F%6A%71%75%65%72%79%2F%6A%75%6D%62%6F%73%68%61%72%65%2D%73%6F%63%69%61%6C%2D%73%68%61%72%65%2D%63%6F%75%6E%74%65%72%2D%77%69%74%68%2D%73%6F%63%69%61%6C%2D%62%75%74%74%6F%6E%73%2F%22%20%63%6C%61%73%73%3D%22%6A%75%6D%62%6F%53%68%61%72%65%5F%6D%63%74%22%20%74%61%72%67%65%74%3D%22%5F%62%6C%61%6E%6B%22%20%74%69%74%6C%65%3D%22%47%65%74%20%54%68%69%73%20%4A%75%6D%62%6F%53%68%61%72%65%20%66%6F%72%20%79%6F%75%72%20%57%65%62%73%69%74%65%22%3E%4D%3C%2F%61%3E")+ //Don't Remove this line
           "</div>";
           return code;
         }
