@@ -39,6 +39,7 @@ height: 100%;width: 100%;
 }
 .mct_jumboShare_buttons a:hover{border-radius:5px;}
 .jumboShare_btn {
+    cursor:pointer;
     text-decoration: none;
     padding: 5px 10px 5px 32px;
     position: relative;
