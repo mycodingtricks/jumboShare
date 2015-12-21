@@ -61,7 +61,7 @@
                 updateCounter();
             });
             $.getJSON("https://api.bufferapp.com/1/links/shares.json?callback=?&url="+encodeURIComponent(settings.url),function(data){
-                add(d.shares);
+                add(data.shares);
                 updateCounter();
             });
             $.getJSON('https://api.facebook.com/method/fql.query?format=json&query=SELECT+total_count+FROM+link_stat+WHERE+url+%3D+%27'+encodeURIComponent(settings.url)+'%27&callback=?',function(d){
