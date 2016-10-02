@@ -56,51 +56,13 @@
         }
         function getCount(){
             var $this = this;
-            $.getJSON('http://cdn.api.twitter.com/1/urls/count.json?url='+encodeURIComponent(settings.url)+'&callback=?',function(d){
-                add(d.count);
+            $.getJSON('https://count.donreach.com/?url='+encodeURIComponent(settings.url)+'&callback=?',function(d){
+                add(d.total);
                 updateCounter();
             });
             $.getJSON("https://api.bufferapp.com/1/links/shares.json?callback=?&url="+encodeURIComponent(settings.url),function(data){
                 add(data.shares);
                 updateCounter();
-            });
-            $.getJSON('https://api.facebook.com/method/fql.query?format=json&query=SELECT+total_count+FROM+link_stat+WHERE+url+%3D+%27'+encodeURIComponent(settings.url)+'%27&callback=?',function(d){
-                add(d[0].total_count);
-                updateCounter();
-            });
-            $.getJSON("https://www.linkedin.com/countserv/count/share?url="+encodeURIComponent(settings.url)+"&format=jsonp&callback=?", function(data) {
-                add(data.count);
-                updateCounter();
-            });
-            $.getJSON("http://api.pinterest.com/v1/urls/count.json?callback=?&url="+encodeURIComponent(settings.url),function(data){
-                add(data.count);
-                updateCounter();
-            });
-            var GooglePlusdata = {
-                "method":"pos.plusones.get",
-                "id":settings.url,
-                "params":{
-                    "nolog":true,
-                    "id":settings.url,
-                    "source":"widget",
-                    "userId":"@viewer",
-                    "groupId":"@self"
-                },
-                "jsonrpc":"2.0",
-                "key":"p",
-                "apiVersion":"v1"
-            };
-            $.ajax({
-                type: "POST",
-                url: "https://clients6.google.com/rpc",
-                processData: true,
-                contentType: 'application/json',
-                cache:true,
-                data: JSON.stringify(GooglePlusdata),
-                success: function(r){
-                    add(r.result.metadata.globalCounts.count);
-                    updateCounter();
-                }
             });
         }
         return this;
